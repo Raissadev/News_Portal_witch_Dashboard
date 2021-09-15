@@ -58,7 +58,7 @@
 						<li><a href="<?php echo INCLUDE_PATH; ?>">Início</a></li>
 						<li><a href="<?php echo INCLUDE_PATH; ?>noticias">Notícias</a></li>
 						<li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
-						<li><a href="<?php echo INCLUDE_PATH_PAINEL; ?>">Painel</a></li>
+						<li><a href="<?php echo INCLUDE_PATH_PAINEL; ?>home">Painel</a></li>
 						<li><a href="">Demos</a></li>
 					</ul>
 					<div class="colInter  itemsFlex justEnd heightComplet">
