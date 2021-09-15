@@ -1,0 +1,872 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter",sans-serif;
+}
+
+/**Boot CSS**/
+
+:root{
+	--myGreen:#0ee6b0;
+	--myGreenTwo:#03ae84;
+	--myBlack:#000;
+	--myBlackLittle:#0a0a0a;
+	--myTextParagraph:#858585;
+	--myTextParagraphTwo:#818181;
+	--paragraphDescription:#343a40;
+	--myWhite:#fff;
+	--borderColor:#494949;
+	--borderColorTwo:#e9ecef;
+}
+input:focus, textarea:focus, select{
+	outline: 0;
+}
+input, textarea, select{
+	height: 36px;
+    width: 100%;
+    border: 1px solid var(--borderColorTwo);
+	padding:0 1rem;
+}
+input[type="submit"]{
+    border: 1px solid var(--myBlack);
+	background-color: var(--myBlack);
+	color: var(--myWhite);
+	cursor: pointer;
+}
+input[type="checkbox"]{
+    height: 10px;
+	width: auto;
+}
+textarea{
+	height: 180px;
+	padding:1rem;
+	resize: none;
+}
+form input{
+	margin:1rem 0;
+}
+h1,h2,h3,h4,h5,h6, h2 a{
+	font-size: 1.25rem;
+	color: var(--myBlack);
+	line-height: 1.4;
+	font-weight: 700;
+}
+p{
+	font-size: 0.8rem;
+	color: var(--myTextParagraph);
+	font-weight: 500;
+}
+.info span{
+	font-weight: 400;
+	font-size: 0.55rem;
+	color: var(--myTextParagraphTwo);
+}
+.infoAuthor span, .infoAuthor a{
+	font-weight: 600;
+	font-size: 0.55rem;
+	color: var(--myBlack);
+	text-transform: uppercase;
+}
+.infoAuthor span.date{
+	color: var(--myTextParagraph);
+}
+.info svg{
+	height:0.7rem ;
+	width: 0.7rem;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+a.category{
+	background-color: rgba(0,0,0,0.3);
+	color: var(--myWhite);
+	padding: 0.2rem 0.4rem;
+	font-size: 0.7rem;
+	animation: fadeIn .25s;
+	text-transform: uppercase;
+	margin-right: 0.7rem;
+}
+a.tag{
+	color: var(--myGreenTwo);
+	font-size: 0.7rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+a.category:hover{
+	background-color: black;
+	color: white;
+}
+ul{
+	list-style-type: none;
+}
+svg{
+	vertical-align: middle;
+	margin: 0 0.2rem;
+}
+img{
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
+	border-radius: 2px;
+}
+.titleNoticeFeature a{
+	color: var(--myBlack);
+    font-size: 2.8rem;
+    --cs-padding-title-line: .25em;
+    background-color: var(--myGreen);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    transition: .25s;
+    line-height: 1.8;
+    padding: 0.6rem;
+}
+.titleNoticeFeatureSmall a{
+	color: var(--myBlack);
+    font-size: 2rem;
+    --cs-padding-title-line: .25em;
+    background-color: var(--myGreen);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    transition: .25s;
+	line-height: 1.9;
+    padding: 0.5rem;
+}
+.titleNoticeDefault, .titleNoticeDefault a{
+	font-size: 1rem;
+    color:var(--myBlack);
+	margin-bottom: 0.4rem;
+}
+.titleNoticeSingleFeature{
+	font-size: 3rem;
+	font-weight: 700;
+	margin: 0.5rem 0;
+}
+.grid-one{
+	display: grid;
+	grid-template-columns: 100%;
+}
+.grid-two{
+	display: grid;
+	grid-template-columns: 49% 49%;
+	grid-gap:1%;
+}
+.grid-three{
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	grid-gap:2%;
+}
+.grid-four{
+	display: grid;
+	grid-template-columns: 24% 24% 24% 24%;
+	grid-gap:1%;
+}
+.grid-2x8{
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+.grid-3x7{
+	display: grid;
+	grid-template-columns: 29% 69%;
+	grid-gap:1%;
+}
+.grid-7x3{
+	display: grid;
+	grid-template-columns: 69% 29%;
+	grid-gap:1%;
+}
+.grid-4x6{
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+.grid-6x4{
+	display: grid;
+	grid-template-columns: 60% 40%;
+}
+.textCenter{
+	text-align: center;
+}
+.itemsFlex{
+	display: flex;
+}
+.itemsFlexCenter{
+	display: flex;
+	align-items: center;
+}
+.alignCenter{
+	align-items: center;
+}
+.alignEnd{
+	align-items: flex-end;
+}
+.justCenter{
+	justify-content: center;
+}
+.justEnd{
+	justify-content: flex-end;
+}
+.center{
+	margin: 0 auto;
+}
+.heightComplet{
+	height: 100%;
+}
+.height80Per{
+	height: 80%;
+}
+.height60Per{
+	height: 60%;
+}
+.w100{
+	width: 100%;
+}
+.w90{
+	width: 90%;
+}
+.w85{
+	width: 85%;
+}
+.w80{
+	width: 80%;
+}
+.w70{
+	width: 70%;
+}
+.w60{
+	width: 60%;
+}
+.w50{
+	width: 50%;
+}
+.w30{
+	width:30%;
+}
+.marginDownDefault{
+	margin-bottom: 5vh;
+}
+.marginDownSmall{
+	margin-bottom: 2.5vh;
+}
+.marginDownBigger{
+	margin-bottom: 15vh;
+}
+.limitLineClampFive{
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.limitLineClampFour{
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.limitLineClampThree{
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.limitLineClampTwo{
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.marginDefaultTitle{
+	margin: 2vh 0;
+}
+.breadCrumbs{
+	margin-bottom: 5vh;
+}
+.breadCrumbs svg{
+	color: var(--myTextParagraphTwo);
+	width: 15px;
+	height: 15px;
+}
+.breadCrumbs a{
+	font-size: 0.8rem;
+	color: var(--myTextParagraphTwo);
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.breadCrumbs a.index{
+	color: var(--myTextParagraph);
+	font-weight: 500;
+}
+.closeAside, .toggleMenu{
+	cursor: pointer;
+}
+.aside.showMenu  {
+    display: none;
+}
+div.resultSearch{
+	background-color: var(--myGreen);
+	border-radius:6px;
+	padding: 0.5rem 1rem;
+	display: inline-block;
+	position: fixed;
+	top: 20vh;
+	right: 2%;
+}
+div.resultSearch h2{
+	color:white;
+	font-weight: 400;
+	font-size: 1rem;
+}
+.bgBlack{
+	background-color: black;
+}
+.bgGreen{
+	background-color: var(--myGreen);
+}
+.bgGreenTwo{
+	background-color: var(--myGreenTwo);
+}
+.bgBlackLittle{
+	background-color: var(--borderColor);
+}
+/**/
+header svg,header a,header h2{
+	color: var(--myWhite);
+}
+header{
+	background-color: var(--myBlackLittle);
+	width: 100%;
+	border-bottom: 1px solid var(--borderColor);
+	height: auto;
+}
+header .wrap .row:nth-of-type(1), header .wrap .row:nth-of-type(2) .lineRow .colInter ul:nth-of-type(1){
+	border-right: 1px solid var(--borderColor);
+}
+header .wrap .row:nth-of-type(2) .lineRow:nth-of-type(1){
+	border-bottom: 1px solid var(--borderColor);
+}
+header .wrap .row:nth-of-type(1),header .wrap .row:nth-of-type(2) .lineRow  {
+	padding: 0 2rem;
+}
+header .wrap{
+	height: 6rem;
+}
+header .wrap .logoHeader svg{
+	margin-right: 0.5rem;
+}
+header .wrap .logoHeader h2 a{
+	font-size: 1.5rem;
+}
+ul.itemsMenu li{
+	margin-right:0.7rem;
+	padding-bottom: 1rem;
+}
+header .row .colInter ul{
+	padding:0 0.4rem;
+}
+ul.itemsMenu li a{
+	font-weight: 700;
+	font-size: 0.85rem;
+}
+header .wrap .row:nth-of-type(2) .col{
+	height: 2rem;
+}
+header .wrap .row:nth-of-type(2) .lineRow a{
+	margin:0 0.5rem;
+}
+header .wrap .row:nth-of-type(2) .lineRow a svg{
+	width: 20px;
+	height: 20px;
+}
+footer{
+	background-color:var(--myBlackLittle);
+	border-top: 1px solid var(--borderColor);
+	padding:1.5rem 0;
+	margin-top: 15vh;
+}
+footer .row .copy h6{
+	color: var(--myWhite);
+	font-weight: 500;
+	font-size: 1rem;
+}
+footer .row .copy h6 span{
+	color: var(--myGreen);
+}
+footer .row .socials a {
+	margin:0 0.45rem;
+}
+footer .row .socials a svg{
+	color: white;
+	width: 20px;
+	height: 20px;
+}
+/*ASIDE*/
+aside.aside{
+	position: fixed;
+	top:0;
+	left:0;
+	width:23%;
+	height:100%;
+	background-color: white;
+	overflow-y: auto;
+	animation: fadeInLeft .45s;
+}
+aside.aside .wrap .row.paddingOneRem{
+	padding: 2rem 1rem;
+}
+aside.aside .titleAside{
+	background-color: black;
+	padding: 1rem;
+}
+aside.aside .titleAside h2,aside.aside .titleAside .closeAside svg {
+	color:white;
+}
+.hideDesktop{
+	display: none;
+}
+/*ERROR 404*/
+section.error404 img{
+	height: 100vh;
+}
+/*HOME*/
+main.noticeImportant{
+	background-color: var(--myBlack);
+	min-height: 80vh;
+	max-height: 80vh;
+	padding:2rem 0 0 0;
+}
+main.noticeImportant .cardNotice{
+	margin-top: 5vh;
+}
+main.noticeImportant .cardNotice .imgNotice img{
+	height: 80vh;
+}
+main.noticeImportant .cardNotice .infoNotice {
+	margin-left: -2rem;
+}
+
+section.cardsSmallNotices .row .cardNoticeSingle{
+	height: 8rem;
+}
+section.cardsSmallNotices .row .cardNoticeSingle:hover{
+	background-image: url('../images/demoCard.jpg');
+	background-size: cover;
+	height: 8rem;
+	animation:fadeIn .25s;
+}
+section.cardsSmallNotices .row .cardNoticeSingle:hover .cardText h5, section.cardsSmallNotices .row .cardNoticeSingle:hover .cardNumber p{
+	color:var(--myWhite)
+}
+section.cardsSmallNotices .row .cardNoticeSingle .cardNumber p{
+	font-size: 2rem;
+	border-right:1px solid var(--borderColorTwo);
+	padding: 0.5rem 1rem;
+}
+section.cardsSmallNotices .row .cardNoticeSingle .cardText{
+	padding: 0 1rem;
+}
+section.cardsSmallNotices .row .cardNoticeSingle .cardText h5{
+	font-size: 1rem;
+	margin-bottom: 0.3rem;
+}
+
+.titleCard{
+	border-bottom: 4px solid var(--borderColorTwo);
+	padding-bottom: 0.4rem;
+	margin-bottom: 3vh;
+}
+section.noticeDefault .row .cardImportant{
+	min-height: 100vh;
+	height: 100%;
+	background-size: cover;
+	background-position:center;
+	padding:1rem;
+}
+section.noticeDefault .cardImportant .cardAuthor{
+	margin-top: 1.2rem;
+}
+.cardAuthor img, figure.userImg img{
+	width:35px !important;
+	height: 35px !Important;
+	border-radius: 50%;
+	margin-right: 0.45rem;
+}
+section.noticeDefault .cardImportant .cardAuthor p span{
+	color: var(--myWhite);
+	margin-left: 0.4rem;
+}
+section.noticeDefault .row .lineRow:nth-of-type(1) {
+	padding: 0 1rem 0 0;
+}
+section.noticeDefault .cardImportant h2{
+	margin-top:1rem;
+}
+section.cardsAveragesNotices .row .lineRow.cardSmalls .imgCard img{
+	width:100%;
+	height: 100%;
+	min-height: 10rem;
+}
+section.cardsAveragesNotices .row .lineRow.cardSmalls .cardInfoNotice{
+	width:100%;
+	height: 100%;
+}
+section.cardsAveragesNotices .row .lineRow.cardSmalls .cardSmallOne{
+	padding: 0rem 0.5rem 2rem 0.5rem;
+}
+section.cardsAveragesNotices .row .lineRow.cardSmalls .cardSmallOne:nth-of-type(3),section.cardsAveragesNotices .row .lineRow.cardSmalls .cardSmallOne:nth-of-type(4){
+	padding-bottom: 0;
+}
+section.cardsAveragesNotices .row .lineRow.cardSmalls .cardInfoNotice h2, section.noticesWorld .row .cardBiggerOne .cardInfoNotice h2{
+    margin: 2vh 0;
+}
+
+section.noticesSpeedsDefault .row .cardSpeedOne{
+	padding: 0.5rem;
+}
+section.noticesSpeedsDefault .row .cardSpeedOne img{
+	height:6rem;
+}
+section.noticesSpeedsDefault .row .cardSpeedOne .textSpeedNotice{
+	padding-left:0.75rem;
+}
+
+section.noticesDay{
+	background-color: black;
+	padding: 3rem 0;
+}
+section.noticesDay .row:nth-of-type(1){
+	padding-right: 1rem;
+}
+section.noticesDay .row .cardImportant {
+	min-height: 75vh;
+}
+section.noticesDay .row .titleCard{
+	border-color: var(--borderColor);
+}
+section.noticesDay .row .titleCard h5{
+	color: var(--myGreen);
+}
+section.noticesDay .row .cardSpeedOne{
+	border-bottom: 1px solid var(--borderColor);
+}
+section.noticesDay .row .cardSpeedOne:last-child{
+	border-bottom: 0;
+}
+section.noticesDay .row .cardSpeedOne .textSpeedNotice h4 a{
+	color: var(--myWhite);
+}
+section.noticesDay .row .cardSpeedOne .textSpeedNotice p a.categoryBox{
+	color: var(--myGreenTwo);
+}
+
+
+section.noticeMarginInternalDefault .row .cardBiggerOne .imgCard{
+	margin-bottom: 0.8rem;
+}
+section.noticesWorld .row .cardBiggerOne .imgCard img{
+	height: 35vh;
+}
+section.noticesWorld .row .cardBiggerOne .cardInfoNotice p, section.containerNotices .wrapNotices .cardNotice .cardInfo p{
+	font-size: 0.875rem;
+	color: var(--paragraphDescription);
+	margin: 0.8rem 0;
+}
+section.noticesWorld .row .cardBiggerOne .cardInfoNotice h2{
+	font-size:1.2rem;
+}
+
+section.noticesFeatures .row .cardImportant{
+	min-height: 30vh;
+    margin-right: 2rem;
+}
+section.noticesFeatures .row .cardSpeedOne{
+	border-top: 1px solid var(--borderColorTwo);
+	padding:1rem 0;
+}
+section.noticesFeatures .row .cardSpeedOne img{
+	min-height: 12vh;
+}
+section.noticesFeatures .row .cardBiggerOne .cardInfoNotice h2{
+    margin: 1vh 0;
+}
+section.noticesFeatures .row .cardBiggerOne .cardInfoNotice h2 {
+    font-size: 1.5rem;
+}
+section.noticesFeatures .row .cardSpeedOne .textSpeedNotice{
+	padding: 0 1rem;
+}
+section.noticesFeatures .row .cardSpeedOne .textSpeedNotice h4{
+	font-size: 0.8rem;
+}
+
+section.backgroundNotice img:nth-of-type(1){
+	height: 80vh;
+}
+section.backgroundNotice .row .textCardNotice{
+	margin-top:-12vh;
+}
+section.backgroundNotice .row .textCardNotice h2{
+	margin-top: 3vh;
+}
+
+section.listNotices .row .col .cardBiggerOne, section.listNotices div.noticesSmallDefault .cardSmallOne{
+	border-bottom: 1px solid var(--borderColorTwo);
+	padding:1rem 0;
+}
+section.listNotices .row .col .cardBiggerOne .cardInfoNotice{
+	padding:0 10rem 0 1rem;
+}
+section.listNotices .row .col .cardBiggerOne .imgCard img{
+	height:27vh;
+}
+.row .cardNewllaster{
+	padding:2rem;
+	background-color: #F8F9FA;
+}
+.row .cardNewllaster form input{
+	margin:0.5rem 0;
+}
+.row .cardNewllaster .headerCard p{
+	font-size: 0.875rem;
+	color: var(--paragraphDescription);
+	margin: 0.8rem 0;
+}
+.checkCard .footerCard{
+	margin-top: 0.6rem;
+}
+.checkCard input{
+	display: inline-block;
+}
+.checkCard label{
+	color: var(--myTextParagraphTwo);
+	font-size: 0.7rem;
+	padding-left: 0.3rem;
+}
+section.listNotices div.noticesSmallDefault{
+	margin-top:8vh;
+}
+div.noticesSmallDefault .cardSmallOne .imgCard img{
+	height:15vh;
+}
+div.noticesSmallDefault .cardInfoNotice{
+	padding:0 1rem;
+}
+div.noticesSmallDefault .cardInfoNotice h2 {
+	font-size: 0.8rem;
+	margin:1vh 0;
+}
+
+/*CONTACT*/
+section.contentContact{
+	height: 100vh;
+}
+section.contentContact form input[type="submit"]{
+	width: auto;
+	padding: 0 2rem;
+}
+
+/*NOTICES*/
+section.containerNotices{
+	padding: 3rem 0;
+}
+section.containerNotices .row{
+	padding: 0 1.2rem;
+}
+.followUs .titleCard h2{
+	font-size: 1.1rem;
+}
+.followUs .socials{
+	justify-content: space-around;
+}
+.followUs .socials a svg{
+	color: var(--myBlack);
+	width: 20px;
+	height:20px
+}
+div.search {
+	position: relative;
+	margin:0.5rem 0;
+}
+div.search input{
+	margin: 0 !important;
+	border-right: 0px;
+}
+div.search button{
+	position: absolute;
+	right:0;
+	background: white;
+    border: 0px;
+	height: 100%;
+	border:1px solid var(--borderColorTwo);
+	border-left: none;
+	cursor: pointer;
+}
+div.search button svg{
+	color: var(--myTextParagraphTwo);
+	width: 18px;
+	height:18px;
+}
+section.containerNotices .cardSmallOne{
+	border-bottom: 1px solid var(--borderColorTwo);
+	padding:1rem 0;
+}
+section.containerNotices .cardSmallOne:last-child{
+	border:0;
+}
+section.containerNotices .row .cardTopic{
+	padding: 1rem 2rem;
+	background-size: cover;
+	margin-bottom: 0.8rem;
+}
+section.containerNotices .row .col h2, section.containerNotices .row .col h6.number{
+	color: var(--myWhite);
+}
+section.containerNotices .row .col h6.number{
+	background-color: var(--myBlack);
+	border-radius: 50%;
+	height: 35px;
+	width:35px
+}
+section.containerNotices .wrapNotices .cardNotice{
+	margin-bottom:15vh;
+}
+section.containerNotices .wrapNotices .cardNotice .cardInfo{
+	background-color: var(--myWhite);
+	margin-top:-6rem;
+	padding: 0 2rem;
+}
+section.containerNotices .wrapNotices .cardNotice .cardInfo h2 a{
+	font-size: 2.5rem;
+    background-color: var(--myWhite);
+}
+section.containerNotices .wrapNotices .cardNotice .cardInfo p{
+	margin-top: 8vh;
+}
+article .description{
+	color: #343a40;
+	font-size: 0.9rem;
+	line-height: 1.35;
+}
+article .containerLogin{
+	background-color: var(--myBlackLittle);
+	display: inline-block;
+	border-radius: 6px;
+	padding: 0.5rem 1rem;
+}
+article .containerLogin p{
+	color: var(--myWhite);
+}
+article .containerLogin a{
+	color: var(--myGreen);
+}
+
+
+
+
+@media screen and (max-width: 780px){
+	.gridOneMobile{
+		grid-template-columns: 100%;
+	}
+	.gridTwoMobile{
+		grid-template-columns: 50% 50%;
+	}
+	.w100Mobile{
+		width: 100%;
+	}
+	.w80Mobile{
+		width: 80%;
+	}
+	.alignCenterMobile{
+		align-items: center;
+	}
+	.justCenterMobile{
+		justify-content: center;
+	}
+	.spaceDefaultMobile{
+		margin: 3vh 0 0 0;
+	}
+	.hideMobile{
+		display: none;
+	}
+	header .row .lineRow:nth-of-type(2){
+		display:none;
+	}
+	header .wrap {
+		height: 5rem;
+	}
+	header .wrap .row:nth-of-type(2) .lineRow:nth-of-type(1), header .wrap .row:nth-of-type(1){
+		border: 0;
+	}
+	aside.aside {
+		width: 70%;
+	}
+	main.noticeImportant .cardNotice .imgNotice img {
+		height: 50vh;
+	}
+	.titleNoticeFeature a {
+		font-size: 2rem;
+		padding: 0.4rem;
+	}
+	main.noticeImportant .cardNotice .infoNotice {
+		margin: -5rem 0 0 0;
+	}	
+	section.noticeDefault .row .cardImportant {
+		min-height: 70vh;
+	}
+	section.noticesDay .row:nth-of-type(1), section.noticesFeatures .row .cardImportant {
+		padding-right: 0;
+		margin: 0 0 2rem 0;
+	}
+	section.listNotices .row .col .cardBiggerOne .cardInfoNotice {
+		padding: 0 1rem 0 1rem;
+	}
+	.hideDesktop{
+		display: block;
+	}
+	ul.itemsMenu li a {
+		color: black;
+	}
+	ul.itemsMenu li {
+		border-bottom: 1px solid var(--borderColorTwo);
+		padding:0.5rem 0 0.5rem 0;
+	}
+	aside .itemsMobile {
+		padding: 1rem 0 2rem 0;
+	}
+	aside.aside .wrap .row.paddingOneRem{
+		padding: 1rem;
+	}
+	section.containerNotices .row:nth-of-type(1){
+		position: fixed;
+		top: 0;
+		left:0%;
+		background-color: white;
+		overflow-y: scroll;
+		padding: 3rem 1rem;
+		width: 70%;
+		height: 100%;
+		z-index: 999;
+		touch-action: pan-x;
+	}
+}
+@keyframes 	fadeIn{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 50%;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+@keyframes fadeInLeft{
+	0%{
+		left:-100%;
+	}
+	50%{
+		left:-50%;
+	}
+	100%{
+		left:0;
+	}
+}
