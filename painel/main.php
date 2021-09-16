@@ -79,8 +79,7 @@
 			<div class="wrap grid-5x5">
 				<div class="row items-flex w90 center">
 					<div class="headerIcon items-flex w40Mobile">
-						<span id="menuClose" class="btnIcon"><i class="menuMobile" data-feather="menu"></i> </span>
-						<span id="menuOpen" class="btnIcon"><i class="menuMobile" data-feather="menu"></i> </span>
+						<span class="btnIcon btnIconClick"><i class="menuMobile" data-feather="menu"></i> </span>
 					</div><!--headerIcon-->
 					<div class="headerInput items-flex w70">
 						<input class="w100" type="search" placeholder="Pesquisar..." /><div class="searchIcon"><i data-feather="search"></i></div><!--searchIcon-->
