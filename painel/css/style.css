@@ -251,6 +251,9 @@ svg{
 img{
 	object-fit: cover;
 }
+.showMenu{
+	display:none !important;
+}
 .card{
 	background-color: var(--bgTwo);
     box-shadow: 0 3px 9px 0 rgb(28 28 51 / 15%);
