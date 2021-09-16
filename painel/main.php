@@ -16,7 +16,7 @@
 </head>
 <body>
 <main id="mainContent">
-	<aside id="asidePainel" ontouchstart="showCoordinates(event)" ontouchmove="showCoordinates(event)">
+	<aside class="asidePainel" ontouchstart="showCoordinates(event)" ontouchmove="showCoordinates(event)">
 		<div class="wrap">
 			<div class="userPainel items-flex">
 				<div class="boxUser">
