@@ -1,20 +1,22 @@
-# News_Portal_witch_Dashboard
-<h2>Sobre o Projeto</h2>
+# News Portal witch Dashboard
+<h3>Sobre o Projeto</h3>
 <p>Portal de notícias conectado com o Dashboard.</p>
-<h3>Front-end:</h3>
+
 <ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JS</li>
-</ul>
-<h3>Back-end:</h3>
-<ul>
-  <li>PHP</li>
-  <li>Database: MySql</li>
-</ul>
-<h3>Stacks:</h3>
-<ul>
-  <li>jQuery</li>
+  <li>Lenguages:</li>
+  <i>PHP, JavaScript e SQL</i>
+  
+  <li>Database:</li>
+  <i>MySql</i>
+  
+  <li>Library:</li>
+  <i>jQuery</i>
+  
+  <li>Style:</li>
+  <i>Cascading Style Sheets</i>
+  
+  <li>Markup Language:</li>
+  <i>HTML</i>
 </ul>
 
 ![mygif](https://user-images.githubusercontent.com/82960240/138618576-4e9654a7-91c3-4574-850c-b828f57bf98d.gif)
