@@ -19,7 +19,7 @@
   <i>HTML</i>
 </ul>
 
-![mygif](https://user-images.githubusercontent.com/82960240/138618576-4e9654a7-91c3-4574-850c-b828f57bf98d.gif)
+![gifPortalNews](https://user-images.githubusercontent.com/82960240/141554034-891bcdfc-76c6-4d41-8782-05884230ec76.gif)
 
 <h3>Autor</h3>
 <h4>Raissa Arcaro Daros</h4>
